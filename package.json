@@ -1,0 +1,23 @@
+{
+    "name": "ci-cd",
+    "version": "1.0.0",
+    "description": "Una demo de CI/CD del curso DATW2026",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint ."
+    },
+    "keywords": [],
+    "type": "module",
+    "prettier": {
+        "singleQuote": true
+    },
+    "devDependencies": {
+        "@eslint/css": "^1.2.0",
+        "@eslint/js": "^10.0.1",
+        "@eslint/json": "^1.2.0",
+        "@eslint/markdown": "^8.0.2",
+        "eslint": "^10.4.0",
+        "globals": "^17.6.0",
+        "typescript-eslint": "^8.60.0"
+    }
+}
