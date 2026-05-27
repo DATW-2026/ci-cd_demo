@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Sample
-        run: echo "This is a demo workflow for testing purposes."
+        run: echo "This is a demo workflow for testing purposes." && exit 1
