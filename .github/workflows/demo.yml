@@ -1,14 +1,14 @@
 name: Demo Workflow
 on:
-    push:
-        branches:
-            - main
-    pull_request:
-        branches:
-            - main
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 jobs:
-    my-job:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Sample
-              run: echo "This is a demo workflow for testing purposes."
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sample
+        run: echo "This is a demo workflow for testing purposes."
