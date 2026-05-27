@@ -1,23 +1,41 @@
 {
-    "name": "ci-cd",
-    "version": "1.0.0",
-    "description": "Una demo de CI/CD del curso DATW2026",
-    "main": "index.js",
-    "scripts": {
-        "lint": "eslint ."
-    },
-    "keywords": [],
-    "type": "module",
-    "prettier": {
-        "singleQuote": true
-    },
-    "devDependencies": {
-        "@eslint/css": "^1.2.0",
-        "@eslint/js": "^10.0.1",
-        "@eslint/json": "^1.2.0",
-        "@eslint/markdown": "^8.0.2",
-        "eslint": "^10.4.0",
-        "globals": "^17.6.0",
-        "typescript-eslint": "^8.60.0"
-    }
+  "name": "10-front",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "test": "vitest",
+    "test:c": "vitest run --coverage",
+    "e2e": "playwright test --project=chromium",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.60.0",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jsdom": "^28.0.3",
+    "@types/node": "^25.9.1",
+    "@vitest/coverage-v8": "^4.1.6",
+    "eslint": "^10.0.3",
+    "globals": "^17.4.0",
+    "husky": "^9.1.7",
+    "jsdom": "^29.1.1",
+    "prettier": "^3.8.1",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.57.1",
+    "vite": "^8.0.1",
+    "vitest": "^4.1.6"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "dependencies": {
+    "zod": "^4.4.3"
+  }
 }
